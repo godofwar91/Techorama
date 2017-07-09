@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pm:AbstractPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Techorama.Views.SpeakersPage"
+             BindingContext="{Binding Source={StaticResource Locator}, Path=Speakers}"
+             xmlns:pm="clr-namespace:Techorama.Common"
+             Title="Speakers">
+
+  <Grid x:Name="LayoutRoot" RowSpacing="0" BackgroundColor="{StaticResource PageBackgroundColor}">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="*"></RowDefinition>
+    </Grid.RowDefinitions>
+    
+    <StackLayout Orientation="Horizontal" Padding="10">
+      <Label Text="Search by track" VerticalOptions="Center" Style="{StaticResource TestoTastoStyle}" HorizontalOptions="Start" />
+      <Picker x:Name="pickerSlot" HorizontalOptions="FillAndExpand" TextColor="Orange"></Picker>
+    </StackLayout>
+    <ListView
+              x:Name="roomsList"
+              Grid.Row="1"
+              HasUnevenRows="true"
+             
+              ItemsSource="{Binding Speakers, Mode=TwoWay}"
+              ItemTapped="ItemTapped_Click">
+
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout HorizontalOptions="Start"  Orientation="Vertical" Padding="15,5,5,15" >
+              <Label Text="{Binding Name}" TextColor="{StaticResource YellowColor}" FontAttributes="Bold"></Label>
+              <Label Text="{Binding Location}" FontAttributes="Bold" TextColor="Aqua" HorizontalOptions="Start"></Label>
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+
+    </ListView>
+  </Grid>
+</pm:AbstractPage>

@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pm:AbstractPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Techorama.Views.MainPage"
+             BindingContext="{Binding Source={StaticResource Locator}, Path=Main}"
+             xmlns:pm="clr-namespace:Techorama.Common"
+             Title="Sessions"
+              >
+  <!--<Label Text="Ciao a tutti cooosa???" Style="{StaticResource TestoTastoStyle}" VerticalOptions="Center" HorizontalOptions="Center" />-->
+
+  <Grid RowSpacing="0" BackgroundColor="{StaticResource PageBackgroundColor}">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="*"></RowDefinition>
+    </Grid.RowDefinitions>
+   <!-- <Image x:Name="NoWifi" Grid.Row="0" Grid.RowSpan="2" Aspect="AspectFit" WidthRequest="100" HeightRequest="100"  VerticalOptions="Center" HorizontalOptions="Center">
+      <Image.Source>
+          <OnPlatform x:TypeArguments="ImageSource">
+            <OnPlatform.Android>no-wifi.png</OnPlatform.Android>
+            <OnPlatform.WinPhone>Images/no-wifi.png</OnPlatform.WinPhone>
+          </OnPlatform>
+        </Image.Source>
+    </Image>-->
+    <Grid Grid.Row="1">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="100"></RowDefinition>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <RowDefinition Height="*"></RowDefinition>
+      </Grid.RowDefinitions>
+      <!--<ActivityIndicator Grid.Row="0" Grid.RowSpan="3" VerticalOptions="Center" HorizontalOptions="Center" x:Name="Rotella">
+      <ActivityIndicator.WidthRequest>
+        <OnPlatform x:TypeArguments="x:Double" iOS="100" Android="100" WinPhone="400" />
+      </ActivityIndicator.WidthRequest>
+      <ActivityIndicator.Color>
+        <OnPlatform x:TypeArguments="Color" WinPhone="{StaticResource YellowColor}" />
+      </ActivityIndicator.Color>
+    </ActivityIndicator>-->
+      <Image Grid.Row="0"  Aspect="AspectFill" >
+        <Image.Source>
+          <OnPlatform x:TypeArguments="ImageSource">
+            <!--<OnPlatform.iOS>icon_twitter.png</OnPlatform.iOS>-->
+            <OnPlatform.Android>techorama_backdrop.png</OnPlatform.Android>
+            <OnPlatform.WinPhone>Images/techorama_backdrop.png</OnPlatform.WinPhone>
+          </OnPlatform>
+        </Image.Source>
+      </Image>
+      <Image Grid.Row="0"  Aspect="AspectFill"  HorizontalOptions="Center" HeightRequest="70" VerticalOptions="Center" >
+        <Image.Source>
+          <OnPlatform x:TypeArguments="ImageSource">
+            <!--<OnPlatform.iOS>icon_twitter.png</OnPlatform.iOS>-->
+            <OnPlatform.Android>logo_techorama.png</OnPlatform.Android>
+            <OnPlatform.WinPhone>Images/logo_techorama.png</OnPlatform.WinPhone>
+          </OnPlatform>
+        </Image.Source>
+      </Image>
+      <Image Grid.Row="0"  Aspect="AspectFill"   HorizontalOptions="Start" HeightRequest="50" VerticalOptions="Center" >
+        <Image.Source>
+          <OnPlatform x:TypeArguments="ImageSource">
+            <!--<OnPlatform.iOS>icon_twitter.png</OnPlatform.iOS>-->
+            <OnPlatform.Android>robot.png</OnPlatform.Android>
+            <OnPlatform.WinPhone>Images/robot.png</OnPlatform.WinPhone>
+          </OnPlatform>
+        </Image.Source>
+      </Image>
+      <Grid Padding="10" Grid.Row="1">
+        <StackLayout Orientation="Vertical"  VerticalOptions="Center" >
+          <Grid>
+            <!--<StackLayout Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="Center">
+            <Label x:Name="DayMonthText" Text="23" TextColor="Red" FontAttributes="Bold" Style="{StaticResource TestoTastoStyle}" />
+            <Label Text=" May"  Style="{StaticResource TestoTastoStyle}" />
+          </StackLayout>-->
+            <Label Style="{StaticResource TestoTastoStyle}" HorizontalOptions="Start" VerticalOptions="Center">
+              <Label.FormattedText>
+                <FormattedString>
+                  <Span x:Name="DayMonthText" Text="23" ForegroundColor="#91AD3D" FontAttributes="Bold" />
+                  <Span Text=" May" />
+                </FormattedString>
+              </Label.FormattedText>
+            </Label>
+
+            <Button  Text=">> View 24 May" Clicked="View24_Clicked" Command="{Binding Command}" IsVisible="{Binding Show24, Mode=TwoWay}" HorizontalOptions="End" Style="{StaticResource baseTastoStyle}"></Button>
+            <Button  Text=">> View 23 May" Clicked="View23_Clicked" Command="{Binding Command}" IsVisible="{Binding Show23, Mode=TwoWay}" HorizontalOptions="End" Style="{StaticResource baseTastoStyle}"></Button>
+          </Grid>
+          <StackLayout Orientation="Horizontal">
+            <Label Text="Filter by slot" VerticalOptions="Center" Style="{StaticResource TestoTastoStyle}" HorizontalOptions="Start" />
+            <Picker x:Name="pickerSlot" HorizontalOptions="FillAndExpand" TextColor="Orange"></Picker>
+          </StackLayout>
+        </StackLayout>
+      </Grid>
+      <ListView
+                x:Name="sessionsList"
+                Grid.Row="2"
+                HasUnevenRows="true"
+                ItemsSource="{Binding Sessions}"
+                ItemTapped="ItemTapped_Click">
+
+        <!-- Group Header Customization-->
+        <!-- <ListView.GroupHeaderTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout BackgroundColor="White"  Padding="15,5,5,15">
+              <Label Text="{Binding Key}" TextColor="#7F0000" FontAttributes="Bold"></Label>
+            </StackLayout>
+          </ViewCell>         
+        </DataTemplate>
+      </ListView.GroupHeaderTemplate>-->
+
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <StackLayout HorizontalOptions="Start"  Orientation="Vertical" Padding="15,5,5,15" >
+                <Label Text="{Binding Title}" TextColor="{StaticResource YellowColor}" FontAttributes="Bold"></Label>
+                <StackLayout Orientation="Horizontal">
+                  <Label Text="Room: " FontAttributes="Bold" TextColor="Black" />
+                  <Label Text="{Binding Room}" FontAttributes="Bold" TextColor="Aqua" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" IsVisible="{Binding Speaker, Converter={StaticResource stringToVisibilityConverter}}">
+                  <Label Text="Speaker: " FontAttributes="Bold" TextColor="Black" />
+                  <Label Text="{Binding Speaker}" FontAttributes="Bold" TextColor="Aqua" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                  <Label Text="Start: " FontAttributes="Bold" TextColor="Black" />
+                  <Label Text="{Binding Start, Converter={StaticResource dateTimeToStringConverter}}" FontAttributes="Bold" TextColor="Aqua" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                  <Label Text="End: " FontAttributes="Bold" TextColor="Black" />
+                  <Label Text="{Binding End, Converter={StaticResource dateTimeToStringConverter}}" FontAttributes="Bold" TextColor="Aqua" />
+                </StackLayout>
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+
+      </ListView>
+    </Grid>
+
+  </Grid>
+
+
+</pm:AbstractPage>

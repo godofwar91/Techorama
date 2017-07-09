@@ -1,0 +1,86 @@
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\bin\Debug\Techorama.dll.config
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\bin\Debug\Techorama.dll
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\bin\Debug\Techorama.pdb
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\bin\Debug\GalaSoft.MvvmLight.dll
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\bin\Debug\Microsoft.WindowsAzure.Mobile.dll
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\bin\Debug\System.Net.Http.dll
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\bin\Debug\GalaSoft.MvvmLight.pdb
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\bin\Debug\GalaSoft.MvvmLight.xml
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\bin\Debug\Microsoft.WindowsAzure.Mobile.xml
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\bin\Debug\System.Net.Http.xml
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\bin\Debug\Xamarin.Forms.Platform.pdb
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\obj\Debug\Techorama.csproj.App.config
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\obj\Debug\Techorama.App.xaml.g.cs
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\obj\Debug\Techorama.Views.MainPage.xaml.g.cs
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\obj\Debug\Techorama.Views.TechoramaMaster.xaml.g.cs
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\obj\Debug\Techorama.Views.TechoramaMP.xaml.g.cs
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\obj\Debug\Techorama.dll
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\obj\Debug\Techorama.pdb
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\obj\Debug\Techorama.csprojResolveAssemblyReference.cache
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\obj\Debug\Techorama.Views.SessionDetailPage.xaml.g.cs
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\obj\Debug\Techorama.Views.RoomsPage.xaml.g.cs
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\obj\Debug\Techorama.Views.SpeakersPage.xaml.g.cs
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\obj\Debug\Techorama.Views.SpeakerDetailPage.xaml.g.cs
+C:\Users\Utente\Documents\Visual Studio 2015\Projects\Techorama\Techorama\Techorama\obj\Debug\Techorama.Views.TracksPage.xaml.g.cs
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\bin\Debug\Techorama.dll.config
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\bin\Debug\Techorama.dll
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\bin\Debug\Techorama.pdb
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\bin\Debug\GalaSoft.MvvmLight.dll
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\bin\Debug\Microsoft.WindowsAzure.Mobile.dll
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\bin\Debug\Newtonsoft.Json.dll
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\bin\Debug\System.Net.Http.dll
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\bin\Debug\System.Net.Http.Extensions.dll
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\bin\Debug\System.Net.Http.Primitives.dll
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\bin\Debug\Xamarin.Forms.Core.dll
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\bin\Debug\GalaSoft.MvvmLight.pdb
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\bin\Debug\GalaSoft.MvvmLight.xml
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\bin\Debug\Microsoft.WindowsAzure.Mobile.xml
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\bin\Debug\Newtonsoft.Json.xml
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\bin\Debug\System.Net.Http.xml
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\bin\Debug\System.Net.Http.Extensions.xml
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\bin\Debug\System.Net.Http.Primitives.xml
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\bin\Debug\Xamarin.Forms.Core.xml
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\bin\Debug\Xamarin.Forms.Platform.pdb
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\obj\Debug\Techorama.csproj.App.config
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\obj\Debug\Techorama.csprojResolveAssemblyReference.cache
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\obj\Debug\Techorama.App.xaml.g.cs
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\obj\Debug\Techorama.Views.MainPage.xaml.g.cs
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\obj\Debug\Techorama.Views.TechoramaMaster.xaml.g.cs
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\obj\Debug\Techorama.Views.TechoramaMP.xaml.g.cs
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\obj\Debug\Techorama.Views.SessionDetailPage.xaml.g.cs
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\obj\Debug\Techorama.Views.RoomsPage.xaml.g.cs
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\obj\Debug\Techorama.Views.SpeakersPage.xaml.g.cs
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\obj\Debug\Techorama.Views.SpeakerDetailPage.xaml.g.cs
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\obj\Debug\Techorama.Views.TracksPage.xaml.g.cs
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\obj\Debug\Techorama.dll
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\obj\Debug\Techorama.pdb

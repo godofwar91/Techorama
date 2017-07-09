@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Techorama.App" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:d1p1="http://schemas.openxmlformats.org/markup-compatibility/2006" d1p1:Ignorable="d" xmlns:converter="clr-namespace:Techorama.Converters">
+  <Application.Resources>
+    <ResourceDictionary>
+       <!--Stile Testo titolo-->
+      <Style x:Key="TitoloStyle" TargetType="Label">
+        <Setter Property="TextColor" Value="#3F6F23">
+        </Setter>
+        <Setter Property="FontAttributes" Value="Bold">
+        </Setter>
+        <Setter Property="FontSize">
+          <Setter.Value>
+            <OnPlatform x:TypeArguments="x:Double" iOS="10" Android="20" WinPhone="18" />
+          </Setter.Value>
+        </Setter>
+      </Style>
+      <!--Stile Testo-->
+      <Style x:Key="TestoStyle" TargetType="Label">
+        <Setter Property="TextColor" Value="#424944">
+        </Setter>
+        <Setter Property="FontSize">
+          <Setter.Value>
+            <OnPlatform x:TypeArguments="x:Double" iOS="10" Android="18" WinPhone="16" />
+          </Setter.Value>
+        </Setter>
+      </Style>
+      <!--Stile Testo tasto-->
+      <Style x:Key="TestoTastoStyle" TargetType="Label">
+        <Setter Property="TextColor" Value="#EA7C00">
+        </Setter>
+        <Setter Property="FontSize">
+          <Setter.Value>
+            <OnPlatform x:TypeArguments="x:Double" iOS="10" Android="20" WinPhone="18" />
+          </Setter.Value>
+        </Setter>
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="VerticalOptions" Value="Center" />
+      </Style>
+       <!--Stile Testo normal-->
+      <Style x:Key="TestoNormalStyle" TargetType="Label">
+        <Setter Property="TextColor" Value="#424439">
+        </Setter>
+        <Setter Property="FontSize">
+          <Setter.Value>
+            <OnPlatform x:TypeArguments="x:Double" iOS="10" Android="18" WinPhone="16" />
+          </Setter.Value>
+        </Setter>
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="VerticalOptions" Value="Center" />
+      </Style>
+      <!--Stile base Button-->
+      <Style x:Key="baseTastoStyle" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="#EEEEEE">
+        </Setter>
+        <Setter Property="TextColor" Value="#EA7C00">
+        </Setter>
+        <Setter Property="BorderColor" Value="Aqua">
+        </Setter>
+        <Setter Property="BorderWidth" Value="1">
+        </Setter>
+      </Style>
+      <!--Stile Tasto Button-->
+      <Style x:Key="ButtonTastoStyle" TargetType="Button" BasedOn="{StaticResource baseTastoStyle}">
+        <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        <Setter Property="VerticalOptions" Value="Center" />
+      </Style>
+
+      <Color x:Key="PageBackgroundColor">#186278</Color>
+      <Color x:Key="YellowColor">#FAC212</Color>
+      <!--<Color x:Key="PageBackgroundColor">#186278</Color>-->
+
+      <!--DataTemplate Storico-->
+      <DataTemplate x:Key="ItemExpression">
+        <ViewCell>
+          <ViewCell.View>
+            <Grid Padding="20,10,20,10">
+              <Label FontAttributes="Bold" TextColor="Fuchsia" Text="{Binding}" FontSize="20" LineBreakMode="WordWrap">
+              </Label>
+            </Grid>
+          </ViewCell.View>
+        </ViewCell>
+      </DataTemplate>
+      <converter:DateTimeToStringConverter x:Key="dateTimeToStringConverter" />
+      <converter:StringToVisibilityConverter x:Key="stringToVisibilityConverter" />
+
+      <!-- <vm:ViewModelLocator x:Key="Locator"  xmlns:d4p1="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:vm="clr-namespace:CalcolatriceApp.ViewModel" />-->
+      <vm:ViewModelLocator x:Key="Locator" d:IsDataSource="True" xmlns:d4p1="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:vm="clr-namespace:Techorama.ViewModel" />
+    </ResourceDictionary>
+  </Application.Resources>
+</Application>

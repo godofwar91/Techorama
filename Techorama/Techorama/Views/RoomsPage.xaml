@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pm:AbstractPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Techorama.Views.RoomsPage"
+             BindingContext="{Binding Source={StaticResource Locator}, Path=Rooms}"
+             xmlns:pm="clr-namespace:Techorama.Common"
+             Title="Rooms">
+   <Grid RowSpacing="0" BackgroundColor="{StaticResource PageBackgroundColor}">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="*"></RowDefinition>
+    </Grid.RowDefinitions>
+   
+    <!--<Grid Padding="10">
+     
+      <StackLayout Orientation="Vertical"  VerticalOptions="Center" >
+        <Grid>
+       
+          <Label Style="{StaticResource TestoTastoStyle}" HorizontalOptions="Start" VerticalOptions="Center">
+            <Label.FormattedText>
+              <FormattedString>
+                <Span x:Name="DayMonthText" Text="23" ForegroundColor="Red" FontAttributes="Bold" />
+                <Span Text=" May" />
+              </FormattedString>
+            </Label.FormattedText>
+          </Label>
+
+          <Button  Text=">> View 24 May" Clicked="View24_Clicked" Command="{Binding Command}" IsVisible="{Binding Show24, Mode=TwoWay}" HorizontalOptions="End" Style="{StaticResource baseTastoStyle}"></Button>
+          <Button  Text=">> View 23 May" Clicked="View23_Clicked" Command="{Binding Command}" IsVisible="{Binding Show23, Mode=TwoWay}" HorizontalOptions="End" Style="{StaticResource baseTastoStyle}"></Button>
+        </Grid>        
+        <StackLayout Orientation="Horizontal">
+           <Label Text="Filter by slot" VerticalOptions="Center" Style="{StaticResource TestoNormalStyle}" HorizontalOptions="Start" />
+           <Picker x:Name="pickerSlot" HorizontalOptions="FillAndExpand"></Picker>
+        </StackLayout>
+      </StackLayout>
+    </Grid>-->
+    <ListView 
+              x:Name="roomsList"
+              Grid.Row="1"
+              HasUnevenRows="true"
+              IsGroupingEnabled="True"
+              GroupDisplayBinding="{Binding Key}"
+              ItemsSource="{Binding RoomSessionGrouping, Mode=TwoWay}" 
+              ItemTapped="ItemTapped_Click">
+      
+    <!-- Group Header Customization-->
+    <ListView.GroupHeaderTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout BackgroundColor="White"  Padding="15,5,5,15">
+              <Label Text="{Binding Key}" TextColor="{StaticResource PageBackgroundColor}" FontAttributes="Bold"></Label>
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.GroupHeaderTemplate>
+      
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout HorizontalOptions="Start"  Orientation="Vertical" Padding="15,5,5,15" >
+              <Label Text="{Binding Title}" TextColor="{StaticResource YellowColor}" FontAttributes="Bold"></Label>
+              <StackLayout Orientation="Horizontal" IsVisible="{Binding Speaker, Converter={StaticResource stringToVisibilityConverter}}">
+                  <Label Text="Speaker: " FontAttributes="Bold" TextColor="Black" />
+                  <Label Text="{Binding Speaker}" FontAttributes="Bold" TextColor="Aqua" />
+              </StackLayout>
+              <StackLayout Orientation="Horizontal">
+                  <Label Text="Start: " FontAttributes="Bold" TextColor="Black" />
+                  <Label Text="{Binding Start, Converter={StaticResource dateTimeToStringConverter}}" FontAttributes="Bold" TextColor="Aqua" />
+              </StackLayout>
+              <StackLayout Orientation="Horizontal">
+                <Label Text="End: " FontAttributes="Bold" TextColor="Black" />
+                <Label Text="{Binding End, Converter={StaticResource dateTimeToStringConverter}}" FontAttributes="Bold" TextColor="Aqua" />
+              </StackLayout>
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+      
+    </ListView>
+  </Grid>
+</pm:AbstractPage>

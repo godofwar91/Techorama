@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Techorama.Views.SessionDetailPage">
+  <Grid Grid.RowSpacing="0" BackgroundColor="{StaticResource PageBackgroundColor}">
+    <Grid>
+      <ScrollView>
+        <Grid  Padding="10">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+          </Grid.RowDefinitions>
+          <Label x:Name="SessionTitle" Style="{StaticResource TitoloStyle}" TextColor="{StaticResource YellowColor}" FontAttributes="Bold"></Label>
+          <Grid Padding="0,10,0,0" Grid.Row="1">
+            <Label x:Name="SessionDesc" Style="{StaticResource TestoNormalStyle}" TextColor="White"></Label>
+          </Grid>
+        </Grid>
+      </ScrollView>
+    </Grid>
+  </Grid>
+  <!--<Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" /> -->
+</ContentPage>

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BindingContext="{Binding Source={StaticResource Locator}, Path=SpeakerDetail}"
+             x:Class="Techorama.Views.SpeakerDetailPage">
+
+  <Grid RowSpacing="0"  BackgroundColor="{StaticResource PageBackgroundColor}">
+    <Grid Padding="10">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <RowDefinition Height="*"></RowDefinition>
+      </Grid.RowDefinitions>
+      <Grid Grid.Row="0">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition  Width="Auto"></ColumnDefinition>
+          <ColumnDefinition  Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="ImageAvatar"  Grid.Column="0"  HeightRequest="100" WidthRequest="100" VerticalOptions="Center"></Image>
+        <StackLayout Grid.Column="1" Padding="5,0,0,0" Orientation="Vertical" VerticalOptions="Center">
+          <StackLayout x:Name="ContainerLocation" Orientation="Horizontal" >
+            <Label Text="Location: " FontAttributes="Bold" TextColor="Orange" />
+            <Label x:Name="locationText" FontAttributes="Bold" TextColor="White" />
+          </StackLayout>
+          <!--<StackLayout Orientation="Horizontal">
+            <Label Text="Site: " FontAttributes="Bold" TextColor="Black" />
+            <StackLayout Orientation="Vertical">
+              <Label x:Name="siteText" FontAttributes="Bold" TextColor="Blue">
+              </Label>
+              <BoxView BackgroundColor="Blue" HeightRequest="1" HorizontalOptions="FillAndExpand" Margin="0,-8,0,0" />
+            </StackLayout>          
+          </StackLayout>-->
+          <StackLayout x:Name="ContainerCompany" Orientation="Horizontal">
+            <Label Text="Company: " FontAttributes="Bold" TextColor="Orange" />
+            <Label x:Name="companyText" FontAttributes="Bold" TextColor="White" />
+          </StackLayout>
+        </StackLayout>
+      </Grid>
+      <StackLayout x:Name="ContainerSite" Orientation="Horizontal" Grid.Row="1">
+        <Label Text="Site: " FontAttributes="Bold" TextColor="Orange" />
+        <StackLayout Orientation="Vertical">
+          <Label x:Name="siteText" FontAttributes="Bold" TextColor="Aqua">
+            <Label.GestureRecognizers>
+              <TapGestureRecognizer Tapped="OnTapSite" />
+            </Label.GestureRecognizers>
+          </Label>
+          <BoxView BackgroundColor="Blue" HeightRequest="1" HorizontalOptions="FillAndExpand" Margin="0,-8,0,0" />
+        </StackLayout>
+      </StackLayout>
+      <ScrollView Grid.Row="2">
+        <Grid  Padding="0,5,0,0">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+          </Grid.RowDefinitions>
+          <Label x:Name="BioText" Style="{StaticResource TestoNormalStyle}" VerticalOptions="Start" TextColor="White"></Label>
+          <Grid x:Name="ContainerCourse" Padding="0,10,0,0" Grid.Row="1">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto"></RowDefinition>
+              <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Text="My course" Style="{StaticResource TestoTastoStyle}"></Label>
+            <StackLayout HorizontalOptions="Start"  Orientation="Vertical" Padding="15,5,5,15" Grid.Row="1" >
+              <Label Text="{Binding Session.Title}" TextColor="{StaticResource YellowColor}" FontAttributes="Bold"></Label>
+              <StackLayout Orientation="Horizontal">
+                <Label Text="Room: " FontAttributes="Bold" TextColor="Black" />
+                <Label Text="{Binding Session.Room}" FontAttributes="Bold" TextColor="Aqua" />
+              </StackLayout>
+              <StackLayout Orientation="Horizontal">
+                <Label Text="Track: " FontAttributes="Bold" TextColor="Black" />
+                <Label Text="{Binding Session.Track}" FontAttributes="Bold" TextColor="Aqua" />
+              </StackLayout>
+              <StackLayout Orientation="Horizontal">
+                <Label Text="Start: " FontAttributes="Bold" TextColor="Black" />
+                <Label Text="{Binding Session.Start, Converter={StaticResource dateTimeToStringConverter}}" FontAttributes="Bold" TextColor="Aqua" />
+              </StackLayout>
+              <StackLayout Orientation="Horizontal">
+                <Label Text="End: " FontAttributes="Bold" TextColor="Black" />
+                <Label Text="{Binding Session.End, Converter={StaticResource dateTimeToStringConverter}}" FontAttributes="Bold" TextColor="Aqua" />
+              </StackLayout>
+            </StackLayout>
+          </Grid>
+        </Grid>
+      </ScrollView>      
+    </Grid>
+      
+  </Grid>
+</ContentPage>

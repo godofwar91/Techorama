@@ -1,0 +1,2 @@
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama.UWP\Techorama.UWP.csproj;arm
+C:\Techorama_project\techorama\Techorama\Techorama\Techorama\Techorama.csproj;neutral
