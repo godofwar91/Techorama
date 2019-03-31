@@ -200,19 +200,16 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\no-wifi.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\no_wifi.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\no-wifi.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\no_wifi.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\no-wifi.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\no_wifi.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\no-wifi.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\no_wifi.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\nowifi.png" />

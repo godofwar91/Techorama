@@ -14,6 +14,8 @@ namespace Techorama.Common
         private ActivityIndicator loader = null;
         private Image nowifi = null;
 
+        private static string NAMEASSETNOWIFI = "no_wifi.png";
+
         public AbstractPage()
         {
             this.loader = getLoader();
@@ -93,11 +95,11 @@ namespace Techorama.Common
             };
             if (Device.RuntimePlatform == Device.Windows)
             {
-                nowifi.Source = "Images/no-wifi.png";
+                nowifi.Source = "Images/"+ NAMEASSETNOWIFI;
             }
             else
             {
-                nowifi.Source = ImageSource.FromFile("no-wifi.png");
+                nowifi.Source = ImageSource.FromFile(NAMEASSETNOWIFI);
             }
             return nowifi;
         }

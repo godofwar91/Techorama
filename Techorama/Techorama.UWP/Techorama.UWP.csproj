@@ -122,7 +122,7 @@
     <Content Include="Assets\SplashScreen.scale-400.png" />
     <Content Include="Images\logo_techorama.png" />
     <Content Include="Images\logo_techorama2.png" />
-    <Content Include="Images\no-wifi.png" />
+    <Content Include="Images\no_wifi.png" />
     <Content Include="Images\robot.png" />
     <Content Include="Images\techorama_backdrop.png" />
     <Content Include="Properties\Default.rd.xml" />

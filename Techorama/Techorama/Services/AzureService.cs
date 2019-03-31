@@ -22,6 +22,7 @@ namespace Techorama.Services
 
         public abstract Task<object> CallService();
 
+        public abstract Object GetLocalList();
 
 
         /*public async static Task<List<Session>> GetSessions()

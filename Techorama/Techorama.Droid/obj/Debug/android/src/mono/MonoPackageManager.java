@@ -38,6 +38,13 @@ public class MonoPackageManager {
 				String cacheDir     = context.getCacheDir ().getAbsolutePath ();
 				String dataDir      = getNativeLibraryPath (context);
 				ClassLoader loader  = context.getClassLoader ();
+				java.io.File external0 = android.os.Environment.getExternalStorageDirectory ();
+				String externalDir = new java.io.File (
+							external0,
+							"Android/data/" + context.getPackageName () + "/files/.__override__").getAbsolutePath ();
+				String externalLegacyDir = new java.io.File (
+							external0,
+							"../legacy/Android/data/" + context.getPackageName () + "/files/.__override__").getAbsolutePath ();
 
 				Runtime.init (
 						language,
@@ -49,9 +56,10 @@ public class MonoPackageManager {
 							dataDir,
 						},
 						loader,
-						new java.io.File (
-							android.os.Environment.getExternalStorageDirectory (),
-							"Android/data/" + context.getPackageName () + "/files/.__override__").getAbsolutePath (),
+						new String[] {
+							externalDir,
+							externalLegacyDir
+						},
 						MonoPackageManager_Resources.Assemblies,
 						context.getPackageName ());
 				
@@ -109,6 +117,7 @@ class MonoPackageManager_Resources {
 		"Newtonsoft.Json.dll",
 		"System.Net.Http.Extensions.dll",
 		"System.Net.Http.Primitives.dll",
+		"Techorama.dll",
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",
 		"Xamarin.Android.Support.Design.dll",
 		"Xamarin.Android.Support.v4.dll",
@@ -121,36 +130,8 @@ class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
-		"Techorama.dll",
-		"System.Runtime.dll",
-		"System.ObjectModel.dll",
-		"System.Diagnostics.Debug.dll",
-		"System.Linq.Expressions.dll",
-		"System.Reflection.dll",
-		"System.Collections.dll",
-		"System.Threading.Tasks.dll",
-		"System.Threading.dll",
-		"System.Linq.dll",
-		"System.Reflection.Extensions.dll",
-		"System.Resources.ResourceManager.dll",
-		"System.ComponentModel.dll",
-		"System.Globalization.dll",
-		"System.Text.RegularExpressions.dll",
-		"System.Net.Primitives.dll",
-		"System.Diagnostics.Tools.dll",
-		"System.Runtime.Serialization.Primitives.dll",
-		"System.Text.Encoding.dll",
-		"System.Runtime.Extensions.dll",
-		"System.Linq.Queryable.dll",
-		"System.IO.dll",
-		"System.Xml.XDocument.dll",
-		"System.Dynamic.Runtime.dll",
-		"System.Xml.ReaderWriter.dll",
-		"System.Text.Encoding.Extensions.dll",
-		"System.Runtime.InteropServices.dll",
-		"System.Collections.Concurrent.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};
-	public static final String ApiPackageName = "Mono.Android.Platform.ApiLevel_23";
+	public static final String ApiPackageName = "Mono.Android.Platform.ApiLevel_27";
 }
